@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { Dialog, DialogPanel } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import logo from './assets/logo.png'; // เปลี่ยนจาก absolute path เป็น relative path
-import forest from 'C:/จารย์โจ/ComeCamp/src/assets/03.jpg';
+import forest from './assets/03.jpg';
 const navigation = [
   { name: 'Product', href: '#' },
   { name: 'Features', href: '#' },
