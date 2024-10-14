@@ -3,47 +3,57 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './Navbar';
 import ImageSlider from './ImageSlider';
 import { Link } from 'react-router-dom'; 
+import park1 from './assets/1.jpg';
+import park2 from './assets/2.jpg';
+import park3 from './assets/3.jpg';
+import park4 from './assets/4.jpg';
+import park5 from './assets/5.jpg';
+import park6 from './assets/6.jpg';
+import park7 from './assets/7.jpg';
+import park8 from './assets/8.jpg';
+import park9 from './assets/9.jpg';
+import park10 from './assets/10.jpg';
 
 const parks = [
   {
-    name: 'อุทยานแห่งชาติดอยอินทนนท์',
-    image: '/inthanont.jpg',
+    name: 'อุทยานแห่งชาติดอยผ้าห่มปก',
+    image: park1,
   },
   {
     name: 'อุทยานแห่งชาติดอยสุเทพ-ปุย',
-    image: '/suthep-pui.jpg',
+    image: park2,
   },
   {
-    name: 'อุทยานแห่งชาติดอยผ้าห่มปก',
-    image: '/phahompok.jpg',
+    name: 'อุทยานแห่งชาติดอยอินทนนท์',
+    image: park3,
   },
   {
     name: 'อุทยานแห่งชาติออบหลวง',
-    image: '/obluang.jpg',
+    image: park4,
   },
   {
     name: 'อุทยานแห่งชาติห้วยน้ำดัง',
-    image: '/huainamdang.jpg',
+    image: park5,
   },
   {
-    name: 'อุทยานแห่งชาติเชียงดาว',
-    image: '/chiangdao.jpg',
+    name: 'อุทยานแห่งชาติขุนขาน',
+    image: park6,
   },
   {
-    name: 'อุทยานแห่งชาติดอยหลวง',
-    image: '/doiluang.jpg',
+    name: 'อุทยานแห่งชาติผาแดง',
+    image: park7,
   },
   {
-    name: 'อุทยานแห่งชาติดอยเวียงผา',
-    image: '/wiangpha.jpg',
+    name: 'อุทยานแห่งชาติศรีลานนา',
+    image: park8,
+  },
+  {
+    name: 'อุทยานแห่งชาติแม่ตะไคร้',
+    image: park9,
   },
   {
     name: 'อุทยานแห่งชาติแม่วาง',
-    image: '/maewang.jpg',
-  },
-  {
-    name: 'อุทยานแห่งชาติออบขาน',
-    image: '/obkhan.jpg',
+    image: park10,
   },
 ];
 
@@ -59,7 +69,7 @@ function Home() {
             <Link to={`/park/${park.name}`}>
               <img src={park.image} alt={park.name} className="w-full h-48 object-cover" />
               <div className="absolute bottom-0 left-0 right-0 p-2">
-              <h2 className="text-xl font-semibold text-black text-center">{park.name}</h2>
+              <h2 className="text-xl font-semibold text-white text-center">{park.name}</h2>
               </div>
             </Link>
           </div>
